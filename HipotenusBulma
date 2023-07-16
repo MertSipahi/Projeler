@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class hipotenusBulma {
+    public static void main(String[] args) {
+        int a,b;
+        double c;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.print("A kenarı:");
+        a = girdi.nextInt();
+
+        System.out.print("B kenarı:");
+        b = girdi.nextInt();
+
+        c = Math.sqrt((a*a)+(b*b));
+
+        System.out.println("Hipotenüs "+ c);
+
+
+    }
+}
