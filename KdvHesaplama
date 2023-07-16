@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class KdvHesaplama {
+    public static void main(String[] args) {
+        double tutar, kdvli, kdvFark, kdv = 1.18;
+
+        Scanner girdi = new Scanner(System.in);
+        System.out.print("Ürün fiyatı:");
+        tutar = girdi.nextDouble();
+
+        kdvli = tutar *kdv;
+
+        kdvFark = kdvli - tutar;
+
+        System.out.println("KDV siz Fiyat:" + tutar);
+        System.out.println("KDV li Fiyat:" + kdvli);
+        System.out.println("KDV Tutarı:" + kdvFark);
+    }
+}
