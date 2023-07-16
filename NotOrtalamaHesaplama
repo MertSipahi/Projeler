@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class notOrtalama {
+    public static void main(String[] args) {
+        int m1, f, k, t1, t2, m2;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.print("Matematik Notu:");
+        m1 = girdi.nextInt();
+
+        System.out.print("Fizik Notu:");
+        f = girdi.nextInt();
+
+        System.out.print("Kimya Notu:");
+        k = girdi.nextInt();
+
+        System.out.print("Türkçe Notu:");
+        t1 = girdi.nextInt();
+
+        System.out.print("Tarih Notu:");
+        t2 = girdi.nextInt();
+
+        System.out.print("Müzik Notu:");
+        m2 = girdi.nextInt();
+
+        int toplam = (m1+f+k+t1+t2+m2);
+        double sonuc = toplam / 6.0;
+
+        System.out.print("Ortalama Not:" + sonuc);
+    }
+}
