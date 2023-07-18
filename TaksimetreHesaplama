@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class hipotenusBulma {
+    public static void main(String[] args) { 
+        int a=10,b=20,c,d;
+        double e,f;
+
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.print("A kenarı:");
+        a = girdi.nextInt();
+
+
