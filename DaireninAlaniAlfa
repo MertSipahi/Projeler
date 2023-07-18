@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class DaireninAlaniAlfa {
+    public static void main(String[] args) {
+
+        double r, alfa, alan, pi=3.14;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.print("Daire yarıçapı:");
+        r = girdi.nextDouble();
+
+        System.out.print("Merkez açısı(alfa):");
+        alfa = girdi.nextDouble();
+
+        alan = r * r * pi * alfa / 360;
+
+        System.out.println("Dairenin alanı:" + alan);
+
+    }
+}
