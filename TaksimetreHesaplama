@@ -1,18 +1,21 @@
 import java.util.Scanner;
 
-public class hipotenusBulma {
-    public static void main(String[] args) { 
-        int a=10,b=20;
-        double c=2.2,d,e;
+public class TaksimetreHesaplama {
+    public static void main(String[] args) {
+        int a = 10;
+        double c = 2.2, d, e;
 
         Scanner girdi = new Scanner(System.in);
 
         System.out.print("Kaç km:");
-        d = girdi.nextInt();
+        d = girdi.nextDouble();
 
-        e = (c*d)+a
+        e = (c * d) + a;
+
+        e = (e < 20) ? 20 : e;
 
         System.out.print(e);
         System.out.print("tl");
 
-        
+    }
+}
