@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ManavKasaProgrami {
+    public static void main(String[] args) {
+        int a,e,d,m,p;
+        double Armut = 2.14, Elma = 3.67, Domates = 1.11, Muz = 0.95,  Patlican = 5.00, toplamtutar;
+
+        Scanner girdi = new Scanner(System.in);
+
+        System.out.print("Armut kilosunu giriniz : ");
+        a = girdi.nextInt();
+        System.out.print("Elma kilosunu giriniz : ");
+        e = girdi.nextInt();
+        System.out.print("Domates kilosunu giriniz : ");
+        d = girdi.nextInt();
+        System.out.print("Muz kilosunu giriniz : ");
+        m = girdi.nextInt();
+        System.out.print("Patlıcan kilosunu giriniz : ");
+        p = girdi.nextInt();
+
+        toplamtutar = (a * Armut)+(e * Elma)+(d * Domates)+(m * Muz)+(p * Patlican);
+        System.out.println("Toplam Tutar : " + toplamtutar);
+
+
+    }
+}
