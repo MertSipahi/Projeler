@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HesapMakinesini {
+public class HesapMakinesi {
     public static void main(String[] args) {
         Scanner girdi = new Scanner(System.in);
 
