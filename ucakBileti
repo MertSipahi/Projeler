@@ -1,0 +1,86 @@
+import java.util.Scanner;
+
+public class ucakBileti {
+    public static void main(String[] args) {
+
+        int km, yas, yolTip;
+        double hesap1, hesap2, hesap3, hesap=0.00, mesUcret = 0.10;
+
+        boolean isError = true;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Mesafeyi giriniz: ");
+        km = input.nextInt();
+
+        System.out.println("Yaşınızı giriniz: ");
+        yas = input.nextInt();
+
+        System.out.println("Yolculuk tipini giriniz(tek yön için 1, gidiş dönüş için 2 tuşlanıyız): ");
+        yolTip = input.nextInt();
+
+        if (1<=km && 1<=yas && 1<=yolTip && yolTip<=2) {
+
+            if (0<yas && yas<=12 && yolTip == 1) {
+                //indirim yüzde 50
+                hesap1 = km*mesUcret;
+                hesap2 = hesap1*0.50;
+                hesap = hesap1-hesap2;
+
+            } else if (0<yas && yas<=12 && yolTip == 2) {
+                //indirim yüzde 50+20
+                hesap1 = km*mesUcret;
+                hesap2 = hesap1*0.50;
+                hesap3 = (hesap1-hesap2)*0.20;
+                hesap = (hesap1-hesap2-hesap3)*2;
+
+            } else if (12<yas && yas<=24 && yolTip == 1) {
+                //indirim yüzde 10
+                hesap1 = km*mesUcret;
+                hesap2 = hesap1*0.10;
+                hesap = hesap1-hesap2;
+
+            } else if (12<yas && yas<=24 && yolTip == 2) {
+                //indirim yüzde 10+20
+                hesap1 = km*mesUcret;
+                hesap2 = hesap1*0.10;
+                hesap3 = (hesap1-hesap2)*0.20;
+                hesap = (hesap1-hesap2-hesap3)*2;
+
+            } else if (24<yas && yas<=64 && yolTip == 1) {
+                //indirim yok
+                hesap = km*mesUcret;
+
+            } else if (24<yas && yas<=64 && yolTip == 2) {
+                //indirim yok +20
+
+                hesap1 = km*mesUcret;
+                hesap3 = hesap1*0.20;
+                hesap = (hesap1-hesap3)*2;
+
+            } else if (64<yas && yolTip == 1) {
+                //indirim yüzde 30
+                hesap1 = km*mesUcret;
+                hesap2 = hesap1*0.30;
+                hesap = hesap1-hesap2;
+
+            } else if (64<yas && yolTip == 1) {
+                //indirim yüzde 30+20
+                hesap1 = km*mesUcret;
+                hesap2 = hesap1*0.30;
+                hesap3 = (hesap1-hesap2)*0.20;
+                hesap = (hesap1-hesap2-hesap3)*2;
+            }
+        }
+        else {
+            isError=false;
+        }
+
+        if (!isError) {
+            System.out.println("Hatalı veri girdiniz.");
+        }
+        else {
+            System.out.println("Tutar: " + hesap);
+        }
+    }
+}
