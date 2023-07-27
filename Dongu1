@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Dongu1 {
+    public static void main(String[] args) {
+        int i,k,m=0,n=0;
+
+        Scanner input= new Scanner(System.in);
+        System.out.println("Sayı Giriniz: ");
+        k = input.nextInt();
+
+        for (i=1; i<=k; i++) {
+            if ((i %3 == 0) && (i%4==0)) {
+                m += i;
+                ++n;
+                }
+            }
+        System.out.println("Girdiğiniz sayının, 3 ve 4'e tam bölünen sayılarının ortalaması: " + m/n);
+        }
+    }
