@@ -10,7 +10,7 @@ public class faktoriel {
         System.out.println("ikinci sayıyı giriniz: ");
         m= scan.nextInt();
 
-        for (l = 1; l <= k; l = l+1);
+        for (l = 1; l <= k; l++);
         {
             total1 = total1 * l;
         }
