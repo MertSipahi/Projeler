@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class faktoriel {
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        int k,l,m,n,o, total1=1, total2=1, total3=1, total4=1, total;
+
+        System.out.println("ilk sayıyı giriniz: ");
+        k = scan.nextInt();
+        System.out.println("ikinci sayıyı giriniz: ");
+        m= scan.nextInt();
+
+        for (l = 1; l <= k; l = l+1);
+        {
+            total1 = total1 * l;
+        }
+        
+        for (n=1; n<=m; n++);
+        {
+            total2 = n * total2;
+        }
+
+        total3= k-m;
+
+        for (o=1; o <=total3; o++);
+        {
+            total4 = o * total4;
+        }
+
+        total = total1 / (total2 * total4);
+        System.out.println("(" + k + "-" + m + ") faktöriyeli: " + total);
+    }
+}
