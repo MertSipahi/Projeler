@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Dongu3 {
+    public static void main(String[] args) {
+
+        int k,sayac = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen bir sayı giriniz: ");
+        k = input.nextInt();
+
+        for(int i=1,j=i;i<=k;i*= 4,j*=5){
+            System.out.println("4 ün kuvveti " + i);
+            System.out.println("5 in kuvveti " +j);
+        }
+    }
+}
