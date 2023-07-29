@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class harmonik {
+    public static void main(String[] args) {
+        Scanner scan= new Scanner(System.in);
+        int k;
+        double l,m=0.0;
+        System.out.println("sayı giriniz: ");
+        k= scan.nextInt();
+
+        for (l=1; l<=k; l++) {
+            m += 1/l;
+        }
+        System.out.println("Sayının harmonik eşiti: " + m);
+    }
+}
