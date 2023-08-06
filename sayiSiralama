@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class sayiSiralama {
+    public static void main(String[] args) {
+        int k, l, m = 0, n = 0;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Kaç tane sayı gireceksiniz: ");
+        k = scan.nextInt();
+
+        for (int i = 1; i <= k; i++) {
+            System.out.print(i + ". Sayıyı giriniz: ");
+            l = scan.nextInt();
+            if (l > m) {
+                m = l;
+            }
+            if (l < m) {
+                n = l;
+            }
+        }
+        System.out.println("En büyük sayı: " + m);
+        System.out.println("En küçük sayı: " + n);
+    }
+}
