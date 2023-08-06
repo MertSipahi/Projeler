@@ -13,7 +13,7 @@ public class sayiSiralama {
             if (l > m) {
                 m = l;
             }
-            if (l < m) {
+            if ((l < m) && (l < n)) {
                 n = l;
             }
         }
