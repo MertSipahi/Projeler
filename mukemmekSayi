@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class mukemmekSayi {
+    public static void main(String[] args) {
+        int k, i,m=0;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Sayı giriniz: ");
+        k = scan.nextInt();
+        i = k;
+        while (i >= 1) {
+            if (k % i == 0 ) {
+                m = m+i;
+            }
+            i--;
+        }
+        if ( k==m/2 ){
+            System.out.println("Mükemmel Sayıdır.");
+        }
+        else {
+            System.out.println("Mükemmel sayı değildir.");
+        }
+    }
+}
