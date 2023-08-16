@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class recursiveFibonacci {
+    static int recursiveFibonacci(int number){
+        if (number==2){
+            return 1;
+        }
+        if (number==1){
+            return 1;
+        }
+        int result = recursiveFibonacci(number-1) + recursiveFibonacci(number-2);
+        return result;
+    }
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Sayı giriniz: ");
+        int number= scan.nextInt();
+        System.out.println(recursiveFibonacci(number));
+    }
+}
