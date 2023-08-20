@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class desenMetot {
+    static void f(int a, int b, int c,int d) {
+        if ((a>=5) && (c==d)) {
+            a-=5;
+            c++;
+            d++;
+            System.out.print(a+" ");
+        }
+        else if (a<b){
+            a+=5;
+            d++;
+            System.out.print(a+" ");
+        }
+        else {
+            return;
+        }
+        f(a,b,c,d);
+    }
+    public static void main(String[] args) {
+        Scanner scan=new Scanner(System.in);
+        System.out.print("N sayısı : ");
+        int a = scan.nextInt();
+        int b, c=0, d=0;
+        b=a;
+        System.out.print("Çıktısı : " + a +" ");
+        f(a,b,c,d);
+    }
+}
